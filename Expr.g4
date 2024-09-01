@@ -15,11 +15,9 @@ declaration: (
 	) SEMICOLON;
 
 char_declaration:
-	CHAR_TYPE (
-		IDENTIFIER (COMMA IDENTIFIER)* (
-			ARRAY_DECLARATION (COMMA)?
-		)?
-	)*; // char a, b[10], c, d[20];
+	CHAR_TYPE IDENTIFIER (ARRAY_DECLARATION)? (
+		COMMA IDENTIFIER (ARRAY_DECLARATION)?
+	)*; // char a, b[10], c;
 
 int_declaration: INT_TYPE IDENTIFIER_LIST; // int a2, b3, c4;
 

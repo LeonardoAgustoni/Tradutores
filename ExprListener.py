@@ -17,39 +17,30 @@ class ExprListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#charDecl.
-    def enterCharDecl(self, ctx:ExprParser.CharDeclContext):
+    # Enter a parse tree produced by ExprParser#char_declaration.
+    def enterChar_declaration(self, ctx:ExprParser.Char_declarationContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#charDecl.
-    def exitCharDecl(self, ctx:ExprParser.CharDeclContext):
-        pass
-
-
-    # Enter a parse tree produced by ExprParser#intDecl.
-    def enterIntDecl(self, ctx:ExprParser.IntDeclContext):
-        pass
-
-    # Exit a parse tree produced by ExprParser#intDecl.
-    def exitIntDecl(self, ctx:ExprParser.IntDeclContext):
+    # Exit a parse tree produced by ExprParser#char_declaration.
+    def exitChar_declaration(self, ctx:ExprParser.Char_declarationContext):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#floatDecl.
-    def enterFloatDecl(self, ctx:ExprParser.FloatDeclContext):
+    # Enter a parse tree produced by ExprParser#int_declaration.
+    def enterInt_declaration(self, ctx:ExprParser.Int_declarationContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#floatDecl.
-    def exitFloatDecl(self, ctx:ExprParser.FloatDeclContext):
+    # Exit a parse tree produced by ExprParser#int_declaration.
+    def exitInt_declaration(self, ctx:ExprParser.Int_declarationContext):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#identifierList.
-    def enterIdentifierList(self, ctx:ExprParser.IdentifierListContext):
+    # Enter a parse tree produced by ExprParser#float_declaration.
+    def enterFloat_declaration(self, ctx:ExprParser.Float_declarationContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#identifierList.
-    def exitIdentifierList(self, ctx:ExprParser.IdentifierListContext):
+    # Exit a parse tree produced by ExprParser#float_declaration.
+    def exitFloat_declaration(self, ctx:ExprParser.Float_declarationContext):
         pass
 
 
