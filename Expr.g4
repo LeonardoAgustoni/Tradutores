@@ -14,6 +14,10 @@ declaration: (
 		| float_declaration
 	) SEMICOLON;
 
+IDENTIFIER_LIST: IDENTIFIER (COMMA IDENTIFIER)*; // a, b, c;
+
+ARRAY_DECLARATION: '[' [0-9]+ ']'; // [1123];
+
 char_declaration:
 	CHAR_TYPE IDENTIFIER (ARRAY_DECLARATION)? (
 		COMMA IDENTIFIER (ARRAY_DECLARATION)?
@@ -22,7 +26,3 @@ char_declaration:
 int_declaration: INT_TYPE IDENTIFIER_LIST; // int a2, b3, c4;
 
 float_declaration: FLOAT_TYPE IDENTIFIER_LIST; // float a1, b2;
-
-IDENTIFIER_LIST: IDENTIFIER (COMMA IDENTIFIER)*; // a, b, c;
-
-ARRAY_DECLARATION: '[' [0-9]+ ']'; // [1123];
