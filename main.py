@@ -8,6 +8,6 @@ lexer = ExprLexer(InputStream(input_text))
 stream = CommonTokenStream(lexer)
 parser = ExprParser(stream)
 
-tree = parser.declaration()
+tree = parser.program()
 
 print(tree.toStringTree(recog=parser))
