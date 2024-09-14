@@ -15,6 +15,8 @@ MUL_OP: '*';
 DIV_OP: '/';
 ASSIGN_OP: '=';
 REL_OP: '==' | '!=' | '<' | '<=' | '>' | '>=';
+INCREMENT: '++';
+DECREMENT: '--';
 
 declaration: (
 		char_declaration
@@ -35,12 +37,7 @@ int_declaration: INT_TYPE IDENTIFIER_LIST;
 
 float_declaration: FLOAT_TYPE IDENTIFIER_LIST;
 
-statement: (
-		declaration
-		| if_statement
-		| while_statement
-		| assignment
-	) SEMICOLON;
+statement: ( assignment | increment | decrement) SEMICOLON;
 
 if_statement:
 	'if' '(' condition ')' '{' statement* '}' (
@@ -51,6 +48,9 @@ while_statement: 'while' '(' condition ')' '{' statement* '}';
 
 assignment: IDENTIFIER ASSIGN_OP expression;
 
+increment: IDENTIFIER INCREMENT;
+decrement: IDENTIFIER DECREMENT;
+
 condition: expression REL_OP expression;
 
 expression: term ((ADD_OP | SUB_OP) term)*;
@@ -59,4 +59,6 @@ term: factor ((MUL_OP | DIV_OP) factor)*;
 
 factor: IDENTIFIER | NUMBER;
 
-program: statement*;
+program: (
+		(declaration | if_statement | while_statement) SEMICOLON
+	)*;

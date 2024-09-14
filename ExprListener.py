@@ -80,6 +80,24 @@ class ExprListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ExprParser#increment.
+    def enterIncrement(self, ctx:ExprParser.IncrementContext):
+        pass
+
+    # Exit a parse tree produced by ExprParser#increment.
+    def exitIncrement(self, ctx:ExprParser.IncrementContext):
+        pass
+
+
+    # Enter a parse tree produced by ExprParser#decrement.
+    def enterDecrement(self, ctx:ExprParser.DecrementContext):
+        pass
+
+    # Exit a parse tree produced by ExprParser#decrement.
+    def exitDecrement(self, ctx:ExprParser.DecrementContext):
+        pass
+
+
     # Enter a parse tree produced by ExprParser#condition.
     def enterCondition(self, ctx:ExprParser.ConditionContext):
         pass
