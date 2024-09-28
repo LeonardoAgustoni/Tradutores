@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,25,145,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,26,145,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         1,0,1,0,3,0,31,8,0,1,1,1,1,1,1,3,1,36,8,1,1,1,1,1,1,1,3,1,41,8,1,
         5,1,43,8,1,10,1,12,1,46,9,1,1,2,1,2,3,2,50,8,2,1,3,1,3,1,3,1,3,5,
@@ -22,13 +22,13 @@ def serializedATN():
         1,11,1,12,1,12,1,12,5,12,128,8,12,10,12,12,12,131,9,12,1,13,1,13,
         1,13,3,13,136,8,13,1,13,1,13,5,13,140,8,13,10,13,12,13,143,9,13,
         1,13,0,0,14,0,2,4,6,8,10,12,14,16,18,20,22,24,26,0,3,2,0,11,11,15,
-        15,1,0,22,23,1,0,16,19,146,0,30,1,0,0,0,2,32,1,0,0,0,4,49,1,0,0,
+        15,1,0,23,24,1,0,17,20,146,0,30,1,0,0,0,2,32,1,0,0,0,4,49,1,0,0,
         0,6,51,1,0,0,0,8,60,1,0,0,0,10,71,1,0,0,0,12,75,1,0,0,0,14,98,1,
         0,0,0,16,111,1,0,0,0,18,113,1,0,0,0,20,117,1,0,0,0,22,120,1,0,0,
         0,24,124,1,0,0,0,26,141,1,0,0,0,28,31,3,2,1,0,29,31,3,4,2,0,30,28,
         1,0,0,0,30,29,1,0,0,0,31,1,1,0,0,0,32,33,5,8,0,0,33,35,5,11,0,0,
-        34,36,5,24,0,0,35,34,1,0,0,0,35,36,1,0,0,0,36,44,1,0,0,0,37,38,5,
-        13,0,0,38,40,5,11,0,0,39,41,5,24,0,0,40,39,1,0,0,0,40,41,1,0,0,0,
+        34,36,5,25,0,0,35,34,1,0,0,0,35,36,1,0,0,0,36,44,1,0,0,0,37,38,5,
+        13,0,0,38,40,5,11,0,0,39,41,5,25,0,0,40,39,1,0,0,0,40,41,1,0,0,0,
         41,43,1,0,0,0,42,37,1,0,0,0,43,46,1,0,0,0,44,42,1,0,0,0,44,45,1,
         0,0,0,45,3,1,0,0,0,46,44,1,0,0,0,47,50,3,6,3,0,48,50,3,8,4,0,49,
         47,1,0,0,0,49,48,1,0,0,0,50,5,1,0,0,0,51,52,5,9,0,0,52,57,5,11,0,
@@ -47,9 +47,9 @@ def serializedATN():
         102,5,3,0,0,102,106,5,4,0,0,103,105,3,10,5,0,104,103,1,0,0,0,105,
         108,1,0,0,0,106,104,1,0,0,0,106,107,1,0,0,0,107,109,1,0,0,0,108,
         106,1,0,0,0,109,110,5,5,0,0,110,15,1,0,0,0,111,112,7,0,0,0,112,17,
-        1,0,0,0,113,114,5,11,0,0,114,115,5,20,0,0,115,116,3,24,12,0,116,
+        1,0,0,0,113,114,5,11,0,0,114,115,5,21,0,0,115,116,3,24,12,0,116,
         19,1,0,0,0,117,118,5,11,0,0,118,119,7,1,0,0,119,21,1,0,0,0,120,121,
-        3,16,8,0,121,122,5,21,0,0,122,123,3,16,8,0,123,23,1,0,0,0,124,129,
+        3,16,8,0,121,122,5,22,0,0,122,123,3,16,8,0,123,23,1,0,0,0,124,129,
         3,16,8,0,125,126,7,2,0,0,126,128,3,16,8,0,127,125,1,0,0,0,128,131,
         1,0,0,0,129,127,1,0,0,0,129,130,1,0,0,0,130,25,1,0,0,0,131,129,1,
         0,0,0,132,136,3,0,0,0,133,136,3,12,6,0,134,136,3,14,7,0,135,132,
@@ -71,15 +71,17 @@ class ExprParser ( Parser ):
 
     literalNames = [ "<INVALID>", "'if'", "'('", "')'", "'{'", "'}'", "'else'", 
                      "'while'", "'char'", "'int'", "'float'", "<INVALID>", 
-                     "';'", "','", "<INVALID>", "<INVALID>", "'+'", "'-'", 
-                     "'*'", "'/'", "<INVALID>", "<INVALID>", "'++'", "'--'" ]
+                     "';'", "','", "<INVALID>", "<INVALID>", "<INVALID>", 
+                     "'+'", "'-'", "'*'", "'/'", "<INVALID>", "<INVALID>", 
+                     "'++'", "'--'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "CHAR_TYPE", "INT_TYPE", "FLOAT_TYPE", "IdentVarSimples", 
-                      "SEMICOLON", "COMMA", "WS", "NUMBER", "ADD_OP", "SUB_OP", 
-                      "MUL_OP", "DIV_OP", "OPERADOR_ATRIBUICAO", "OPERADOR_RELACIONAL", 
-                      "INCREMENTO", "DECREMENTO", "ARRAY_DECLARATION", "TipoSimples" ]
+                      "SEMICOLON", "COMMA", "WS", "NUMBER", "NUMBER_NOT_ZERO", 
+                      "ADD_OP", "SUB_OP", "MUL_OP", "DIV_OP", "OPERADOR_ATRIBUICAO", 
+                      "OPERADOR_RELACIONAL", "INCREMENTO", "DECREMENTO", 
+                      "ARRAY_DECLARATION", "TipoSimples" ]
 
     RULE_declaration = 0
     RULE_char_declaration = 1
@@ -118,16 +120,17 @@ class ExprParser ( Parser ):
     COMMA=13
     WS=14
     NUMBER=15
-    ADD_OP=16
-    SUB_OP=17
-    MUL_OP=18
-    DIV_OP=19
-    OPERADOR_ATRIBUICAO=20
-    OPERADOR_RELACIONAL=21
-    INCREMENTO=22
-    DECREMENTO=23
-    ARRAY_DECLARATION=24
-    TipoSimples=25
+    NUMBER_NOT_ZERO=16
+    ADD_OP=17
+    SUB_OP=18
+    MUL_OP=19
+    DIV_OP=20
+    OPERADOR_ATRIBUICAO=21
+    OPERADOR_RELACIONAL=22
+    INCREMENTO=23
+    DECREMENTO=24
+    ARRAY_DECLARATION=25
+    TipoSimples=26
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -252,7 +255,7 @@ class ExprParser ( Parser ):
             self.state = 35
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if _la==24:
+            if _la==25:
                 self.state = 34
                 self.match(ExprParser.ARRAY_DECLARATION)
 
@@ -268,7 +271,7 @@ class ExprParser ( Parser ):
                 self.state = 40
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if _la==24:
+                if _la==25:
                     self.state = 39
                     self.match(ExprParser.ARRAY_DECLARATION)
 
@@ -849,7 +852,7 @@ class ExprParser ( Parser ):
             self.match(ExprParser.IdentVarSimples)
             self.state = 118
             _la = self._input.LA(1)
-            if not(_la==22 or _la==23):
+            if not(_la==23 or _la==24):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -979,10 +982,10 @@ class ExprParser ( Parser ):
             self.state = 129
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 983040) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1966080) != 0):
                 self.state = 125
                 _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 983040) != 0)):
+                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1966080) != 0)):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)

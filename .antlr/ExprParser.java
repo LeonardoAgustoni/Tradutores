@@ -18,8 +18,9 @@ public class ExprParser extends Parser {
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, CHAR_TYPE=8, INT_TYPE=9, 
 		FLOAT_TYPE=10, IdentVarSimples=11, SEMICOLON=12, COMMA=13, WS=14, NUMBER=15, 
-		ADD_OP=16, SUB_OP=17, MUL_OP=18, DIV_OP=19, OPERADOR_ATRIBUICAO=20, OPERADOR_RELACIONAL=21, 
-		INCREMENTO=22, DECREMENTO=23, ARRAY_DECLARATION=24, TipoSimples=25;
+		NUMBER_NOT_ZERO=16, ADD_OP=17, SUB_OP=18, MUL_OP=19, DIV_OP=20, OPERADOR_ATRIBUICAO=21, 
+		OPERADOR_RELACIONAL=22, INCREMENTO=23, DECREMENTO=24, ARRAY_DECLARATION=25, 
+		TipoSimples=26;
 	public static final int
 		RULE_declaration = 0, RULE_char_declaration = 1, RULE_declaracao_simples = 2, 
 		RULE_int_declaration = 3, RULE_float_declaration = 4, RULE_comando = 5, 
@@ -39,8 +40,8 @@ public class ExprParser extends Parser {
 	private static String[] makeLiteralNames() {
 		return new String[] {
 			null, "'if'", "'('", "')'", "'{'", "'}'", "'else'", "'while'", "'char'", 
-			"'int'", "'float'", null, "';'", "','", null, null, "'+'", "'-'", "'*'", 
-			"'/'", null, null, "'++'", "'--'"
+			"'int'", "'float'", null, "';'", "','", null, null, null, "'+'", "'-'", 
+			"'*'", "'/'", null, null, "'++'", "'--'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -48,8 +49,9 @@ public class ExprParser extends Parser {
 		return new String[] {
 			null, null, null, null, null, null, null, null, "CHAR_TYPE", "INT_TYPE", 
 			"FLOAT_TYPE", "IdentVarSimples", "SEMICOLON", "COMMA", "WS", "NUMBER", 
-			"ADD_OP", "SUB_OP", "MUL_OP", "DIV_OP", "OPERADOR_ATRIBUICAO", "OPERADOR_RELACIONAL", 
-			"INCREMENTO", "DECREMENTO", "ARRAY_DECLARATION", "TipoSimples"
+			"NUMBER_NOT_ZERO", "ADD_OP", "SUB_OP", "MUL_OP", "DIV_OP", "OPERADOR_ATRIBUICAO", 
+			"OPERADOR_RELACIONAL", "INCREMENTO", "DECREMENTO", "ARRAY_DECLARATION", 
+			"TipoSimples"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -809,12 +811,12 @@ public class ExprParser extends Parser {
 			setState(129);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 983040L) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1966080L) != 0)) {
 				{
 				{
 				setState(125);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 983040L) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1966080L) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
 				else {
@@ -934,7 +936,7 @@ public class ExprParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0019\u0091\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
+		"\u0004\u0001\u001a\u0091\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001"+
 		"\u0002\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004"+
 		"\u0002\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007"+
 		"\u0002\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0002\u000b\u0007\u000b"+
@@ -957,7 +959,7 @@ public class ExprParser extends Parser {
 		"\u0003\r\u0088\b\r\u0001\r\u0001\r\u0005\r\u008c\b\r\n\r\f\r\u008f\t\r"+
 		"\u0001\r\u0000\u0000\u000e\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012"+
 		"\u0014\u0016\u0018\u001a\u0000\u0003\u0002\u0000\u000b\u000b\u000f\u000f"+
-		"\u0001\u0000\u0016\u0017\u0001\u0000\u0010\u0013\u0092\u0000\u001e\u0001"+
+		"\u0001\u0000\u0017\u0018\u0001\u0000\u0011\u0014\u0092\u0000\u001e\u0001"+
 		"\u0000\u0000\u0000\u0002 \u0001\u0000\u0000\u0000\u00041\u0001\u0000\u0000"+
 		"\u0000\u00063\u0001\u0000\u0000\u0000\b<\u0001\u0000\u0000\u0000\nG\u0001"+
 		"\u0000\u0000\u0000\fK\u0001\u0000\u0000\u0000\u000eb\u0001\u0000\u0000"+
@@ -967,9 +969,9 @@ public class ExprParser extends Parser {
 		"\u0002\u0001\u0000\u001d\u001f\u0003\u0004\u0002\u0000\u001e\u001c\u0001"+
 		"\u0000\u0000\u0000\u001e\u001d\u0001\u0000\u0000\u0000\u001f\u0001\u0001"+
 		"\u0000\u0000\u0000 !\u0005\b\u0000\u0000!#\u0005\u000b\u0000\u0000\"$"+
-		"\u0005\u0018\u0000\u0000#\"\u0001\u0000\u0000\u0000#$\u0001\u0000\u0000"+
+		"\u0005\u0019\u0000\u0000#\"\u0001\u0000\u0000\u0000#$\u0001\u0000\u0000"+
 		"\u0000$,\u0001\u0000\u0000\u0000%&\u0005\r\u0000\u0000&(\u0005\u000b\u0000"+
-		"\u0000\')\u0005\u0018\u0000\u0000(\'\u0001\u0000\u0000\u0000()\u0001\u0000"+
+		"\u0000\')\u0005\u0019\u0000\u0000(\'\u0001\u0000\u0000\u0000()\u0001\u0000"+
 		"\u0000\u0000)+\u0001\u0000\u0000\u0000*%\u0001\u0000\u0000\u0000+.\u0001"+
 		"\u0000\u0000\u0000,*\u0001\u0000\u0000\u0000,-\u0001\u0000\u0000\u0000"+
 		"-\u0003\u0001\u0000\u0000\u0000.,\u0001\u0000\u0000\u0000/2\u0003\u0006"+
@@ -999,10 +1001,10 @@ public class ExprParser extends Parser {
 		"il\u0001\u0000\u0000\u0000jh\u0001\u0000\u0000\u0000jk\u0001\u0000\u0000"+
 		"\u0000km\u0001\u0000\u0000\u0000lj\u0001\u0000\u0000\u0000mn\u0005\u0005"+
 		"\u0000\u0000n\u000f\u0001\u0000\u0000\u0000op\u0007\u0000\u0000\u0000"+
-		"p\u0011\u0001\u0000\u0000\u0000qr\u0005\u000b\u0000\u0000rs\u0005\u0014"+
+		"p\u0011\u0001\u0000\u0000\u0000qr\u0005\u000b\u0000\u0000rs\u0005\u0015"+
 		"\u0000\u0000st\u0003\u0018\f\u0000t\u0013\u0001\u0000\u0000\u0000uv\u0005"+
 		"\u000b\u0000\u0000vw\u0007\u0001\u0000\u0000w\u0015\u0001\u0000\u0000"+
-		"\u0000xy\u0003\u0010\b\u0000yz\u0005\u0015\u0000\u0000z{\u0003\u0010\b"+
+		"\u0000xy\u0003\u0010\b\u0000yz\u0005\u0016\u0000\u0000z{\u0003\u0010\b"+
 		"\u0000{\u0017\u0001\u0000\u0000\u0000|\u0081\u0003\u0010\b\u0000}~\u0007"+
 		"\u0002\u0000\u0000~\u0080\u0003\u0010\b\u0000\u007f}\u0001\u0000\u0000"+
 		"\u0000\u0080\u0083\u0001\u0000\u0000\u0000\u0081\u007f\u0001\u0000\u0000"+

@@ -8,6 +8,7 @@ SEMICOLON: ';';
 COMMA: ',';
 WS: [ \t\r\n]+ -> skip;
 NUMBER: [0-9]+;
+NUMBER_NOT_ZERO: [1-9][0-9]*;
 
 ADD_OP: '+';
 SUB_OP: '-';
@@ -17,10 +18,9 @@ OPERADOR_ATRIBUICAO: '=' | '+=' | '-=' | '*=' | '/=';
 OPERADOR_RELACIONAL: '==' | '!=' | '<' | '<=' | '>' | '>=';
 INCREMENTO: '++';
 DECREMENTO: '--';
+ARRAY_DECLARATION: '[' NUMBER_NOT_ZERO+ ']';
 
 declaration: ( char_declaration | declaracao_simples);
-
-ARRAY_DECLARATION: '[' [0-9]+ ']';
 
 TipoSimples: INT_TYPE | FLOAT_TYPE;
 
