@@ -1,4 +1,4 @@
-from antlr4 import CommonTokenStream, InputStream
+from antlr4 import CommonTokenStream, FileStream
 from antlr4.error.ErrorListener import ErrorListener
 from ExprLexer import ExprLexer
 from ExprParser import ExprParser
@@ -8,6 +8,7 @@ from pygments.lexers import PythonLexer
 from pygments.formatters import TerminalFormatter
 
 
+# Custom error listener to capture parsing errors
 class CustomErrorListener(ErrorListener):
     def __init__(self):
         super(CustomErrorListener, self).__init__()
@@ -23,6 +24,7 @@ class CustomErrorListener(ErrorListener):
         return self.errors
 
 
+# Function to recursively beautify the parse tree
 def beautify_tree(tree, parser, indent_level=0):
     if isinstance(tree, TerminalNodeImpl):
         return "    " * indent_level + tree.getText() + "\n"
@@ -38,8 +40,17 @@ def beautify_tree(tree, parser, indent_level=0):
 
 # Main script logic
 if __name__ == "__main__":
-    input_text = input("> ")
-    lexer = ExprLexer(InputStream(input_text))
+    import sys
+
+    if len(sys.argv) != 2:
+        print("Usage: python parser_script.py <input_file>")
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+
+    # Read the input file
+    input_stream = FileStream(input_file)
+    lexer = ExprLexer(input_stream)
     stream = CommonTokenStream(lexer)
     parser = ExprParser(stream)
 

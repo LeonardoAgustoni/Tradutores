@@ -26,6 +26,15 @@ class ExprListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ExprParser#declaracao_simples.
+    def enterDeclaracao_simples(self, ctx:ExprParser.Declaracao_simplesContext):
+        pass
+
+    # Exit a parse tree produced by ExprParser#declaracao_simples.
+    def exitDeclaracao_simples(self, ctx:ExprParser.Declaracao_simplesContext):
+        pass
+
+
     # Enter a parse tree produced by ExprParser#int_declaration.
     def enterInt_declaration(self, ctx:ExprParser.Int_declarationContext):
         pass
@@ -44,12 +53,12 @@ class ExprListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#statement.
-    def enterStatement(self, ctx:ExprParser.StatementContext):
+    # Enter a parse tree produced by ExprParser#comando.
+    def enterComando(self, ctx:ExprParser.ComandoContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#statement.
-    def exitStatement(self, ctx:ExprParser.StatementContext):
+    # Exit a parse tree produced by ExprParser#comando.
+    def exitComando(self, ctx:ExprParser.ComandoContext):
         pass
 
 
@@ -71,66 +80,48 @@ class ExprListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#assignment.
-    def enterAssignment(self, ctx:ExprParser.AssignmentContext):
+    # Enter a parse tree produced by ExprParser#elemento.
+    def enterElemento(self, ctx:ExprParser.ElementoContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#assignment.
-    def exitAssignment(self, ctx:ExprParser.AssignmentContext):
-        pass
-
-
-    # Enter a parse tree produced by ExprParser#increment.
-    def enterIncrement(self, ctx:ExprParser.IncrementContext):
-        pass
-
-    # Exit a parse tree produced by ExprParser#increment.
-    def exitIncrement(self, ctx:ExprParser.IncrementContext):
+    # Exit a parse tree produced by ExprParser#elemento.
+    def exitElemento(self, ctx:ExprParser.ElementoContext):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#decrement.
-    def enterDecrement(self, ctx:ExprParser.DecrementContext):
+    # Enter a parse tree produced by ExprParser#operacao_matematica.
+    def enterOperacao_matematica(self, ctx:ExprParser.Operacao_matematicaContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#decrement.
-    def exitDecrement(self, ctx:ExprParser.DecrementContext):
-        pass
-
-
-    # Enter a parse tree produced by ExprParser#condition.
-    def enterCondition(self, ctx:ExprParser.ConditionContext):
-        pass
-
-    # Exit a parse tree produced by ExprParser#condition.
-    def exitCondition(self, ctx:ExprParser.ConditionContext):
+    # Exit a parse tree produced by ExprParser#operacao_matematica.
+    def exitOperacao_matematica(self, ctx:ExprParser.Operacao_matematicaContext):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#expression.
-    def enterExpression(self, ctx:ExprParser.ExpressionContext):
+    # Enter a parse tree produced by ExprParser#operacao_simples.
+    def enterOperacao_simples(self, ctx:ExprParser.Operacao_simplesContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#expression.
-    def exitExpression(self, ctx:ExprParser.ExpressionContext):
-        pass
-
-
-    # Enter a parse tree produced by ExprParser#term.
-    def enterTerm(self, ctx:ExprParser.TermContext):
-        pass
-
-    # Exit a parse tree produced by ExprParser#term.
-    def exitTerm(self, ctx:ExprParser.TermContext):
+    # Exit a parse tree produced by ExprParser#operacao_simples.
+    def exitOperacao_simples(self, ctx:ExprParser.Operacao_simplesContext):
         pass
 
 
-    # Enter a parse tree produced by ExprParser#factor.
-    def enterFactor(self, ctx:ExprParser.FactorContext):
+    # Enter a parse tree produced by ExprParser#condicao.
+    def enterCondicao(self, ctx:ExprParser.CondicaoContext):
         pass
 
-    # Exit a parse tree produced by ExprParser#factor.
-    def exitFactor(self, ctx:ExprParser.FactorContext):
+    # Exit a parse tree produced by ExprParser#condicao.
+    def exitCondicao(self, ctx:ExprParser.CondicaoContext):
+        pass
+
+
+    # Enter a parse tree produced by ExprParser#operacao_composta.
+    def enterOperacao_composta(self, ctx:ExprParser.Operacao_compostaContext):
+        pass
+
+    # Exit a parse tree produced by ExprParser#operacao_composta.
+    def exitOperacao_composta(self, ctx:ExprParser.Operacao_compostaContext):
         pass
 
 

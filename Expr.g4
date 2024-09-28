@@ -3,7 +3,7 @@ grammar Expr;
 CHAR_TYPE: 'char';
 INT_TYPE: 'int';
 FLOAT_TYPE: 'float';
-IDENTIFIER: [a-zA-Z_][a-zA-Z_0-9]*;
+IdentVarSimples: [a-zA-Z_][a-zA-Z_0-9]*;
 SEMICOLON: ';';
 COMMA: ',';
 WS: [ \t\r\n]+ -> skip;
@@ -13,51 +13,50 @@ ADD_OP: '+';
 SUB_OP: '-';
 MUL_OP: '*';
 DIV_OP: '/';
-ASSIGN_OP: '=';
-REL_OP: '==' | '!=' | '<' | '<=' | '>' | '>=';
-INCREMENT: '++';
-DECREMENT: '--';
+OPERADOR_ATRIBUICAO: '=' | '+=' | '-=' | '*=' | '/=';
+OPERADOR_RELACIONAL: '==' | '!=' | '<' | '<=' | '>' | '>=';
+INCREMENTO: '++';
+DECREMENTO: '--';
 
-declaration: (
-		char_declaration
-		| int_declaration
-		| float_declaration
-	);
-
-IDENTIFIER_LIST: IDENTIFIER (COMMA IDENTIFIER)*;
+declaration: ( char_declaration | declaracao_simples);
 
 ARRAY_DECLARATION: '[' [0-9]+ ']';
 
+TipoSimples: INT_TYPE | FLOAT_TYPE;
+
 char_declaration:
-	CHAR_TYPE IDENTIFIER (ARRAY_DECLARATION)? (
-		COMMA IDENTIFIER (ARRAY_DECLARATION)?
+	CHAR_TYPE IdentVarSimples (ARRAY_DECLARATION)? (
+		COMMA IdentVarSimples (ARRAY_DECLARATION)?
 	)*;
 
-int_declaration: INT_TYPE IDENTIFIER_LIST;
+declaracao_simples: int_declaration | float_declaration;
 
-float_declaration: FLOAT_TYPE IDENTIFIER_LIST;
+int_declaration:
+	INT_TYPE IdentVarSimples (COMMA IdentVarSimples)*;
 
-statement: ( assignment | increment | decrement) SEMICOLON;
+float_declaration:
+	FLOAT_TYPE IdentVarSimples (COMMA IdentVarSimples)*;
+
+comando: ( operacao_matematica | operacao_simples) SEMICOLON;
 
 if_statement:
-	'if' '(' condition ')' '{' statement* '}' (
-		'else' '{' statement* '}'
+	'if' '(' condicao ')' '{' comando* '}' (
+		'else' '{' comando* '}'
 	)?;
 
-while_statement: 'while' '(' condition ')' '{' statement* '}';
+while_statement: 'while' '(' condicao ')' '{' comando* '}';
 
-assignment: IDENTIFIER ASSIGN_OP expression;
+elemento: IdentVarSimples | NUMBER;
 
-increment: IDENTIFIER INCREMENT;
-decrement: IDENTIFIER DECREMENT;
+operacao_matematica:
+	IdentVarSimples OPERADOR_ATRIBUICAO operacao_composta;
 
-condition: expression REL_OP expression;
+operacao_simples: IdentVarSimples (INCREMENTO | DECREMENTO);
 
-expression: term ((ADD_OP | SUB_OP) term)*;
+condicao: elemento OPERADOR_RELACIONAL elemento;
 
-term: factor ((MUL_OP | DIV_OP) factor)*;
-
-factor: IDENTIFIER | NUMBER;
+operacao_composta:
+	elemento ((ADD_OP | SUB_OP | MUL_OP | DIV_OP) elemento)*;
 
 program: (
 		(declaration | if_statement | while_statement) SEMICOLON
