@@ -8,7 +8,7 @@ SEMICOLON: ';';
 COMMA: ',';
 WS: [ \t\r\n]+ -> skip;
 NUMBER: [0-9]+;
-NUMBER_NOT_ZERO: [1-9][0-9]*;
+NUMBER_NOT_ZERO: [1-9][0-9]*; // char a[0];
 
 ADD_OP: '+';
 SUB_OP: '-';
@@ -46,17 +46,25 @@ if_statement:
 
 while_statement: 'while' '(' condicao ')' '{' comando* '}';
 
-elemento: IdentVarSimples | NUMBER;
+elemento: IdentVarSimples | NUMBER; // a | 0+
+
+elemento_nao_zero: IdentVarSimples | NUMBER_NOT_ZERO; // a | 1+
 
 operacao_matematica:
-	IdentVarSimples OPERADOR_ATRIBUICAO operacao_composta;
+	IdentVarSimples OPERADOR_ATRIBUICAO operacao_composta; // a = a + 1;
 
-operacao_simples: IdentVarSimples (INCREMENTO | DECREMENTO);
+operacao_simples:
+	IdentVarSimples (INCREMENTO | DECREMENTO); //a++
 
 condicao: elemento OPERADOR_RELACIONAL elemento;
 
 operacao_composta:
-	elemento ((ADD_OP | SUB_OP | MUL_OP | DIV_OP) elemento)*;
+	elemento (
+		(
+			(ADD_OP | SUB_OP | MUL_OP) elemento
+			| DIV_OP elemento_nao_zero
+		)
+	)*;
 
 program: (
 		(declaration | if_statement | while_statement) SEMICOLON

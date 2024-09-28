@@ -1,14 +1,12 @@
-int a, b, c;
+int 5a, b, c;
 float d, e;
-char f[10], g, h;
+char f[a], g, h;
 
 while (10 == 10) {
     a = batata;
     b += 2;
     c = c + 1;
-};
-
-
+} else { a = 2};
 
 if (b >= 20) {
     d -= 10;
@@ -16,5 +14,5 @@ if (b >= 20) {
     e *= 25;
     a = a*10+10;
     e++;
-};
+}
 

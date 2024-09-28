@@ -89,6 +89,15 @@ class ExprListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by ExprParser#elemento_nao_zero.
+    def enterElemento_nao_zero(self, ctx:ExprParser.Elemento_nao_zeroContext):
+        pass
+
+    # Exit a parse tree produced by ExprParser#elemento_nao_zero.
+    def exitElemento_nao_zero(self, ctx:ExprParser.Elemento_nao_zeroContext):
+        pass
+
+
     # Enter a parse tree produced by ExprParser#operacao_matematica.
     def enterOperacao_matematica(self, ctx:ExprParser.Operacao_matematicaContext):
         pass

@@ -10,53 +10,56 @@ else:
 
 def serializedATN():
     return [
-        4,1,26,145,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,26,153,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
-        1,0,1,0,3,0,31,8,0,1,1,1,1,1,1,3,1,36,8,1,1,1,1,1,1,1,3,1,41,8,1,
-        5,1,43,8,1,10,1,12,1,46,9,1,1,2,1,2,3,2,50,8,2,1,3,1,3,1,3,1,3,5,
-        3,56,8,3,10,3,12,3,59,9,3,1,4,1,4,1,4,1,4,5,4,65,8,4,10,4,12,4,68,
-        9,4,1,5,1,5,3,5,72,8,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,5,6,82,8,
-        6,10,6,12,6,85,9,6,1,6,1,6,1,6,1,6,5,6,91,8,6,10,6,12,6,94,9,6,1,
-        6,3,6,97,8,6,1,7,1,7,1,7,1,7,1,7,1,7,5,7,105,8,7,10,7,12,7,108,9,
-        7,1,7,1,7,1,8,1,8,1,9,1,9,1,9,1,9,1,10,1,10,1,10,1,11,1,11,1,11,
-        1,11,1,12,1,12,1,12,5,12,128,8,12,10,12,12,12,131,9,12,1,13,1,13,
-        1,13,3,13,136,8,13,1,13,1,13,5,13,140,8,13,10,13,12,13,143,9,13,
-        1,13,0,0,14,0,2,4,6,8,10,12,14,16,18,20,22,24,26,0,3,2,0,11,11,15,
-        15,1,0,23,24,1,0,17,20,146,0,30,1,0,0,0,2,32,1,0,0,0,4,49,1,0,0,
-        0,6,51,1,0,0,0,8,60,1,0,0,0,10,71,1,0,0,0,12,75,1,0,0,0,14,98,1,
-        0,0,0,16,111,1,0,0,0,18,113,1,0,0,0,20,117,1,0,0,0,22,120,1,0,0,
-        0,24,124,1,0,0,0,26,141,1,0,0,0,28,31,3,2,1,0,29,31,3,4,2,0,30,28,
-        1,0,0,0,30,29,1,0,0,0,31,1,1,0,0,0,32,33,5,8,0,0,33,35,5,11,0,0,
-        34,36,5,25,0,0,35,34,1,0,0,0,35,36,1,0,0,0,36,44,1,0,0,0,37,38,5,
-        13,0,0,38,40,5,11,0,0,39,41,5,25,0,0,40,39,1,0,0,0,40,41,1,0,0,0,
-        41,43,1,0,0,0,42,37,1,0,0,0,43,46,1,0,0,0,44,42,1,0,0,0,44,45,1,
-        0,0,0,45,3,1,0,0,0,46,44,1,0,0,0,47,50,3,6,3,0,48,50,3,8,4,0,49,
-        47,1,0,0,0,49,48,1,0,0,0,50,5,1,0,0,0,51,52,5,9,0,0,52,57,5,11,0,
-        0,53,54,5,13,0,0,54,56,5,11,0,0,55,53,1,0,0,0,56,59,1,0,0,0,57,55,
-        1,0,0,0,57,58,1,0,0,0,58,7,1,0,0,0,59,57,1,0,0,0,60,61,5,10,0,0,
-        61,66,5,11,0,0,62,63,5,13,0,0,63,65,5,11,0,0,64,62,1,0,0,0,65,68,
-        1,0,0,0,66,64,1,0,0,0,66,67,1,0,0,0,67,9,1,0,0,0,68,66,1,0,0,0,69,
-        72,3,18,9,0,70,72,3,20,10,0,71,69,1,0,0,0,71,70,1,0,0,0,72,73,1,
-        0,0,0,73,74,5,12,0,0,74,11,1,0,0,0,75,76,5,1,0,0,76,77,5,2,0,0,77,
-        78,3,22,11,0,78,79,5,3,0,0,79,83,5,4,0,0,80,82,3,10,5,0,81,80,1,
-        0,0,0,82,85,1,0,0,0,83,81,1,0,0,0,83,84,1,0,0,0,84,86,1,0,0,0,85,
-        83,1,0,0,0,86,96,5,5,0,0,87,88,5,6,0,0,88,92,5,4,0,0,89,91,3,10,
-        5,0,90,89,1,0,0,0,91,94,1,0,0,0,92,90,1,0,0,0,92,93,1,0,0,0,93,95,
-        1,0,0,0,94,92,1,0,0,0,95,97,5,5,0,0,96,87,1,0,0,0,96,97,1,0,0,0,
-        97,13,1,0,0,0,98,99,5,7,0,0,99,100,5,2,0,0,100,101,3,22,11,0,101,
-        102,5,3,0,0,102,106,5,4,0,0,103,105,3,10,5,0,104,103,1,0,0,0,105,
-        108,1,0,0,0,106,104,1,0,0,0,106,107,1,0,0,0,107,109,1,0,0,0,108,
-        106,1,0,0,0,109,110,5,5,0,0,110,15,1,0,0,0,111,112,7,0,0,0,112,17,
-        1,0,0,0,113,114,5,11,0,0,114,115,5,21,0,0,115,116,3,24,12,0,116,
-        19,1,0,0,0,117,118,5,11,0,0,118,119,7,1,0,0,119,21,1,0,0,0,120,121,
-        3,16,8,0,121,122,5,22,0,0,122,123,3,16,8,0,123,23,1,0,0,0,124,129,
-        3,16,8,0,125,126,7,2,0,0,126,128,3,16,8,0,127,125,1,0,0,0,128,131,
-        1,0,0,0,129,127,1,0,0,0,129,130,1,0,0,0,130,25,1,0,0,0,131,129,1,
-        0,0,0,132,136,3,0,0,0,133,136,3,12,6,0,134,136,3,14,7,0,135,132,
-        1,0,0,0,135,133,1,0,0,0,135,134,1,0,0,0,136,137,1,0,0,0,137,138,
-        5,12,0,0,138,140,1,0,0,0,139,135,1,0,0,0,140,143,1,0,0,0,141,139,
-        1,0,0,0,141,142,1,0,0,0,142,27,1,0,0,0,143,141,1,0,0,0,15,30,35,
-        40,44,49,57,66,71,83,92,96,106,129,135,141
+        2,14,7,14,1,0,1,0,3,0,33,8,0,1,1,1,1,1,1,3,1,38,8,1,1,1,1,1,1,1,
+        3,1,43,8,1,5,1,45,8,1,10,1,12,1,48,9,1,1,2,1,2,3,2,52,8,2,1,3,1,
+        3,1,3,1,3,5,3,58,8,3,10,3,12,3,61,9,3,1,4,1,4,1,4,1,4,5,4,67,8,4,
+        10,4,12,4,70,9,4,1,5,1,5,3,5,74,8,5,1,5,1,5,1,6,1,6,1,6,1,6,1,6,
+        1,6,5,6,84,8,6,10,6,12,6,87,9,6,1,6,1,6,1,6,1,6,5,6,93,8,6,10,6,
+        12,6,96,9,6,1,6,3,6,99,8,6,1,7,1,7,1,7,1,7,1,7,1,7,5,7,107,8,7,10,
+        7,12,7,110,9,7,1,7,1,7,1,8,1,8,1,9,1,9,1,10,1,10,1,10,1,10,1,11,
+        1,11,1,11,1,12,1,12,1,12,1,12,1,13,1,13,1,13,1,13,1,13,3,13,134,
+        8,13,5,13,136,8,13,10,13,12,13,139,9,13,1,14,1,14,1,14,3,14,144,
+        8,14,1,14,1,14,5,14,148,8,14,10,14,12,14,151,9,14,1,14,0,0,15,0,
+        2,4,6,8,10,12,14,16,18,20,22,24,26,28,0,4,2,0,11,11,15,15,2,0,11,
+        11,16,16,1,0,23,24,1,0,17,19,154,0,32,1,0,0,0,2,34,1,0,0,0,4,51,
+        1,0,0,0,6,53,1,0,0,0,8,62,1,0,0,0,10,73,1,0,0,0,12,77,1,0,0,0,14,
+        100,1,0,0,0,16,113,1,0,0,0,18,115,1,0,0,0,20,117,1,0,0,0,22,121,
+        1,0,0,0,24,124,1,0,0,0,26,128,1,0,0,0,28,149,1,0,0,0,30,33,3,2,1,
+        0,31,33,3,4,2,0,32,30,1,0,0,0,32,31,1,0,0,0,33,1,1,0,0,0,34,35,5,
+        8,0,0,35,37,5,11,0,0,36,38,5,25,0,0,37,36,1,0,0,0,37,38,1,0,0,0,
+        38,46,1,0,0,0,39,40,5,13,0,0,40,42,5,11,0,0,41,43,5,25,0,0,42,41,
+        1,0,0,0,42,43,1,0,0,0,43,45,1,0,0,0,44,39,1,0,0,0,45,48,1,0,0,0,
+        46,44,1,0,0,0,46,47,1,0,0,0,47,3,1,0,0,0,48,46,1,0,0,0,49,52,3,6,
+        3,0,50,52,3,8,4,0,51,49,1,0,0,0,51,50,1,0,0,0,52,5,1,0,0,0,53,54,
+        5,9,0,0,54,59,5,11,0,0,55,56,5,13,0,0,56,58,5,11,0,0,57,55,1,0,0,
+        0,58,61,1,0,0,0,59,57,1,0,0,0,59,60,1,0,0,0,60,7,1,0,0,0,61,59,1,
+        0,0,0,62,63,5,10,0,0,63,68,5,11,0,0,64,65,5,13,0,0,65,67,5,11,0,
+        0,66,64,1,0,0,0,67,70,1,0,0,0,68,66,1,0,0,0,68,69,1,0,0,0,69,9,1,
+        0,0,0,70,68,1,0,0,0,71,74,3,20,10,0,72,74,3,22,11,0,73,71,1,0,0,
+        0,73,72,1,0,0,0,74,75,1,0,0,0,75,76,5,12,0,0,76,11,1,0,0,0,77,78,
+        5,1,0,0,78,79,5,2,0,0,79,80,3,24,12,0,80,81,5,3,0,0,81,85,5,4,0,
+        0,82,84,3,10,5,0,83,82,1,0,0,0,84,87,1,0,0,0,85,83,1,0,0,0,85,86,
+        1,0,0,0,86,88,1,0,0,0,87,85,1,0,0,0,88,98,5,5,0,0,89,90,5,6,0,0,
+        90,94,5,4,0,0,91,93,3,10,5,0,92,91,1,0,0,0,93,96,1,0,0,0,94,92,1,
+        0,0,0,94,95,1,0,0,0,95,97,1,0,0,0,96,94,1,0,0,0,97,99,5,5,0,0,98,
+        89,1,0,0,0,98,99,1,0,0,0,99,13,1,0,0,0,100,101,5,7,0,0,101,102,5,
+        2,0,0,102,103,3,24,12,0,103,104,5,3,0,0,104,108,5,4,0,0,105,107,
+        3,10,5,0,106,105,1,0,0,0,107,110,1,0,0,0,108,106,1,0,0,0,108,109,
+        1,0,0,0,109,111,1,0,0,0,110,108,1,0,0,0,111,112,5,5,0,0,112,15,1,
+        0,0,0,113,114,7,0,0,0,114,17,1,0,0,0,115,116,7,1,0,0,116,19,1,0,
+        0,0,117,118,5,11,0,0,118,119,5,21,0,0,119,120,3,26,13,0,120,21,1,
+        0,0,0,121,122,5,11,0,0,122,123,7,2,0,0,123,23,1,0,0,0,124,125,3,
+        16,8,0,125,126,5,22,0,0,126,127,3,16,8,0,127,25,1,0,0,0,128,137,
+        3,16,8,0,129,130,7,3,0,0,130,134,3,16,8,0,131,132,5,20,0,0,132,134,
+        3,18,9,0,133,129,1,0,0,0,133,131,1,0,0,0,134,136,1,0,0,0,135,133,
+        1,0,0,0,136,139,1,0,0,0,137,135,1,0,0,0,137,138,1,0,0,0,138,27,1,
+        0,0,0,139,137,1,0,0,0,140,144,3,0,0,0,141,144,3,12,6,0,142,144,3,
+        14,7,0,143,140,1,0,0,0,143,141,1,0,0,0,143,142,1,0,0,0,144,145,1,
+        0,0,0,145,146,5,12,0,0,146,148,1,0,0,0,147,143,1,0,0,0,148,151,1,
+        0,0,0,149,147,1,0,0,0,149,150,1,0,0,0,150,29,1,0,0,0,151,149,1,0,
+        0,0,16,32,37,42,46,51,59,68,73,85,94,98,108,133,137,143,149
     ]
 
 class ExprParser ( Parser ):
@@ -92,15 +95,16 @@ class ExprParser ( Parser ):
     RULE_if_statement = 6
     RULE_while_statement = 7
     RULE_elemento = 8
-    RULE_operacao_matematica = 9
-    RULE_operacao_simples = 10
-    RULE_condicao = 11
-    RULE_operacao_composta = 12
-    RULE_program = 13
+    RULE_elemento_nao_zero = 9
+    RULE_operacao_matematica = 10
+    RULE_operacao_simples = 11
+    RULE_condicao = 12
+    RULE_operacao_composta = 13
+    RULE_program = 14
 
     ruleNames =  [ "declaration", "char_declaration", "declaracao_simples", 
                    "int_declaration", "float_declaration", "comando", "if_statement", 
-                   "while_statement", "elemento", "operacao_matematica", 
+                   "while_statement", "elemento", "elemento_nao_zero", "operacao_matematica", 
                    "operacao_simples", "condicao", "operacao_composta", 
                    "program" ]
 
@@ -176,15 +180,15 @@ class ExprParser ( Parser ):
         self.enterRule(localctx, 0, self.RULE_declaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 30
+            self.state = 32
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [8]:
-                self.state = 28
+                self.state = 30
                 self.char_declaration()
                 pass
             elif token in [9, 10]:
-                self.state = 29
+                self.state = 31
                 self.declaracao_simples()
                 pass
             else:
@@ -248,35 +252,35 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 32
+            self.state = 34
             self.match(ExprParser.CHAR_TYPE)
-            self.state = 33
-            self.match(ExprParser.IdentVarSimples)
             self.state = 35
+            self.match(ExprParser.IdentVarSimples)
+            self.state = 37
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==25:
-                self.state = 34
+                self.state = 36
                 self.match(ExprParser.ARRAY_DECLARATION)
 
 
-            self.state = 44
+            self.state = 46
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==13:
-                self.state = 37
+                self.state = 39
                 self.match(ExprParser.COMMA)
-                self.state = 38
-                self.match(ExprParser.IdentVarSimples)
                 self.state = 40
+                self.match(ExprParser.IdentVarSimples)
+                self.state = 42
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if _la==25:
-                    self.state = 39
+                    self.state = 41
                     self.match(ExprParser.ARRAY_DECLARATION)
 
 
-                self.state = 46
+                self.state = 48
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -323,17 +327,17 @@ class ExprParser ( Parser ):
         localctx = ExprParser.Declaracao_simplesContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_declaracao_simples)
         try:
-            self.state = 49
+            self.state = 51
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [9]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 47
+                self.state = 49
                 self.int_declaration()
                 pass
             elif token in [10]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 48
+                self.state = 50
                 self.float_declaration()
                 pass
             else:
@@ -391,19 +395,19 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 51
+            self.state = 53
             self.match(ExprParser.INT_TYPE)
-            self.state = 52
+            self.state = 54
             self.match(ExprParser.IdentVarSimples)
-            self.state = 57
+            self.state = 59
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==13:
-                self.state = 53
+                self.state = 55
                 self.match(ExprParser.COMMA)
-                self.state = 54
+                self.state = 56
                 self.match(ExprParser.IdentVarSimples)
-                self.state = 59
+                self.state = 61
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -459,19 +463,19 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 60
+            self.state = 62
             self.match(ExprParser.FLOAT_TYPE)
-            self.state = 61
+            self.state = 63
             self.match(ExprParser.IdentVarSimples)
-            self.state = 66
+            self.state = 68
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==13:
-                self.state = 62
+                self.state = 64
                 self.match(ExprParser.COMMA)
-                self.state = 63
+                self.state = 65
                 self.match(ExprParser.IdentVarSimples)
-                self.state = 68
+                self.state = 70
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -522,21 +526,21 @@ class ExprParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_comando)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 71
+            self.state = 73
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
-                self.state = 69
+                self.state = 71
                 self.operacao_matematica()
                 pass
 
             elif la_ == 2:
-                self.state = 70
+                self.state = 72
                 self.operacao_simples()
                 pass
 
 
-            self.state = 73
+            self.state = 75
             self.match(ExprParser.SEMICOLON)
         except RecognitionException as re:
             localctx.exception = re
@@ -586,47 +590,47 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 75
-            self.match(ExprParser.T__0)
-            self.state = 76
-            self.match(ExprParser.T__1)
             self.state = 77
-            self.condicao()
+            self.match(ExprParser.T__0)
             self.state = 78
-            self.match(ExprParser.T__2)
+            self.match(ExprParser.T__1)
             self.state = 79
+            self.condicao()
+            self.state = 80
+            self.match(ExprParser.T__2)
+            self.state = 81
             self.match(ExprParser.T__3)
-            self.state = 83
+            self.state = 85
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==11:
-                self.state = 80
+                self.state = 82
                 self.comando()
-                self.state = 85
+                self.state = 87
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 86
+            self.state = 88
             self.match(ExprParser.T__4)
-            self.state = 96
+            self.state = 98
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==6:
-                self.state = 87
+                self.state = 89
                 self.match(ExprParser.T__5)
-                self.state = 88
+                self.state = 90
                 self.match(ExprParser.T__3)
-                self.state = 92
+                self.state = 94
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 while _la==11:
-                    self.state = 89
+                    self.state = 91
                     self.comando()
-                    self.state = 94
+                    self.state = 96
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
 
-                self.state = 95
+                self.state = 97
                 self.match(ExprParser.T__4)
 
 
@@ -678,27 +682,27 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 98
-            self.match(ExprParser.T__6)
-            self.state = 99
-            self.match(ExprParser.T__1)
             self.state = 100
-            self.condicao()
+            self.match(ExprParser.T__6)
             self.state = 101
-            self.match(ExprParser.T__2)
+            self.match(ExprParser.T__1)
             self.state = 102
+            self.condicao()
+            self.state = 103
+            self.match(ExprParser.T__2)
+            self.state = 104
             self.match(ExprParser.T__3)
-            self.state = 106
+            self.state = 108
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==11:
-                self.state = 103
+                self.state = 105
                 self.comando()
-                self.state = 108
+                self.state = 110
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 109
+            self.state = 111
             self.match(ExprParser.T__4)
         except RecognitionException as re:
             localctx.exception = re
@@ -743,9 +747,59 @@ class ExprParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 111
+            self.state = 113
             _la = self._input.LA(1)
             if not(_la==11 or _la==15):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class Elemento_nao_zeroContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def IdentVarSimples(self):
+            return self.getToken(ExprParser.IdentVarSimples, 0)
+
+        def NUMBER_NOT_ZERO(self):
+            return self.getToken(ExprParser.NUMBER_NOT_ZERO, 0)
+
+        def getRuleIndex(self):
+            return ExprParser.RULE_elemento_nao_zero
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterElemento_nao_zero" ):
+                listener.enterElemento_nao_zero(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitElemento_nao_zero" ):
+                listener.exitElemento_nao_zero(self)
+
+
+
+
+    def elemento_nao_zero(self):
+
+        localctx = ExprParser.Elemento_nao_zeroContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 18, self.RULE_elemento_nao_zero)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 115
+            _la = self._input.LA(1)
+            if not(_la==11 or _la==16):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -793,14 +847,14 @@ class ExprParser ( Parser ):
     def operacao_matematica(self):
 
         localctx = ExprParser.Operacao_matematicaContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_operacao_matematica)
+        self.enterRule(localctx, 20, self.RULE_operacao_matematica)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 113
+            self.state = 117
             self.match(ExprParser.IdentVarSimples)
-            self.state = 114
+            self.state = 118
             self.match(ExprParser.OPERADOR_ATRIBUICAO)
-            self.state = 115
+            self.state = 119
             self.operacao_composta()
         except RecognitionException as re:
             localctx.exception = re
@@ -844,13 +898,13 @@ class ExprParser ( Parser ):
     def operacao_simples(self):
 
         localctx = ExprParser.Operacao_simplesContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_operacao_simples)
+        self.enterRule(localctx, 22, self.RULE_operacao_simples)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 121
             self.match(ExprParser.IdentVarSimples)
-            self.state = 118
+            self.state = 122
             _la = self._input.LA(1)
             if not(_la==23 or _la==24):
                 self._errHandler.recoverInline(self)
@@ -900,14 +954,14 @@ class ExprParser ( Parser ):
     def condicao(self):
 
         localctx = ExprParser.CondicaoContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_condicao)
+        self.enterRule(localctx, 24, self.RULE_condicao)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 120
+            self.state = 124
             self.elemento()
-            self.state = 121
+            self.state = 125
             self.match(ExprParser.OPERADOR_RELACIONAL)
-            self.state = 122
+            self.state = 126
             self.elemento()
         except RecognitionException as re:
             localctx.exception = re
@@ -932,6 +986,19 @@ class ExprParser ( Parser ):
                 return self.getTypedRuleContext(ExprParser.ElementoContext,i)
 
 
+        def DIV_OP(self, i:int=None):
+            if i is None:
+                return self.getTokens(ExprParser.DIV_OP)
+            else:
+                return self.getToken(ExprParser.DIV_OP, i)
+
+        def elemento_nao_zero(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(ExprParser.Elemento_nao_zeroContext)
+            else:
+                return self.getTypedRuleContext(ExprParser.Elemento_nao_zeroContext,i)
+
+
         def ADD_OP(self, i:int=None):
             if i is None:
                 return self.getTokens(ExprParser.ADD_OP)
@@ -950,12 +1017,6 @@ class ExprParser ( Parser ):
             else:
                 return self.getToken(ExprParser.MUL_OP, i)
 
-        def DIV_OP(self, i:int=None):
-            if i is None:
-                return self.getTokens(ExprParser.DIV_OP)
-            else:
-                return self.getToken(ExprParser.DIV_OP, i)
-
         def getRuleIndex(self):
             return ExprParser.RULE_operacao_composta
 
@@ -973,26 +1034,40 @@ class ExprParser ( Parser ):
     def operacao_composta(self):
 
         localctx = ExprParser.Operacao_compostaContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_operacao_composta)
+        self.enterRule(localctx, 26, self.RULE_operacao_composta)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 124
+            self.state = 128
             self.elemento()
-            self.state = 129
+            self.state = 137
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1966080) != 0):
-                self.state = 125
-                _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1966080) != 0)):
-                    self._errHandler.recoverInline(self)
+                self.state = 133
+                self._errHandler.sync(self)
+                token = self._input.LA(1)
+                if token in [17, 18, 19]:
+                    self.state = 129
+                    _la = self._input.LA(1)
+                    if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 917504) != 0)):
+                        self._errHandler.recoverInline(self)
+                    else:
+                        self._errHandler.reportMatch(self)
+                        self.consume()
+                    self.state = 130
+                    self.elemento()
+                    pass
+                elif token in [20]:
+                    self.state = 131
+                    self.match(ExprParser.DIV_OP)
+                    self.state = 132
+                    self.elemento_nao_zero()
+                    pass
                 else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 126
-                self.elemento()
-                self.state = 131
+                    raise NoViableAltException(self)
+
+                self.state = 139
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1056,35 +1131,35 @@ class ExprParser ( Parser ):
     def program(self):
 
         localctx = ExprParser.ProgramContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_program)
+        self.enterRule(localctx, 28, self.RULE_program)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 141
+            self.state = 149
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 1922) != 0):
-                self.state = 135
+                self.state = 143
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
                 if token in [8, 9, 10]:
-                    self.state = 132
+                    self.state = 140
                     self.declaration()
                     pass
                 elif token in [1]:
-                    self.state = 133
+                    self.state = 141
                     self.if_statement()
                     pass
                 elif token in [7]:
-                    self.state = 134
+                    self.state = 142
                     self.while_statement()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 137
+                self.state = 145
                 self.match(ExprParser.SEMICOLON)
-                self.state = 143
+                self.state = 151
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
